@@ -1,7 +1,7 @@
 from django.shortcuts import render
 
-from dotenv import load_dotenv
-load_dotenv()
+# from dotenv import load_dotenv
+# load_dotenv()
 
 
 # importing for generating resposne.

@@ -1,0 +1,6 @@
+django
+langchain-community
+pinecone-client
+langchain_openai
+langchain
+whitenoise

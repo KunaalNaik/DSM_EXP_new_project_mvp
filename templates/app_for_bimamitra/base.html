@@ -1,0 +1,84 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>BimaMitra | {% block secondary_title %}{% endblock %}</title>
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <!--<link rel="stylesheet" type="text/css" href="../../static/project_image/css/style.css">-->
+        <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+        <!-- 
+        <link rel="stylesheet" type="text/css" href="{% static 'css/home.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'css/bimabot.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'css/contactus.css' %}">
+        -->
+        {% block head %}{% endblock head %} <!-- Head Block -->
+
+    </head>
+    <body>
+
+    {% block navbar %} <!-- Navbar Block -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
+            <a class="navbar-brand" href="../">
+                <img src="{% static 'images/logo/icon.png' %}" alt="Logo" height="40">
+                Bima Mitra</a>
+            
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                 
+                <!-- To configure the content in navigation bar-->
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <!-- Configure Home text -->
+                        <a class="nav-link" href="{% url "bimamitra:home" %}">Home <span class="sr-only">(current)</span></a>
+                    </li>
+
+                    <li class="nav-item">
+                        <!--Configure About text -->
+                        <a class="nav-link" href="{% url "bimamitra:about" %}">About</a>
+                    </li>            
+                    
+                    <!-- Adding dropdown for products page -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Products
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <!-- Defining the content of the dropdown in Navigation bar -->
+                            <a class="dropdown-item" href="{% url "bimamitra:bimabot" %}">Bima Mitra Prototype</a>
+                            <a class="dropdown-item" href="#">Upcoming...</a>
+                        </div>
+                    </li>
+                    
+                    <!--Configure Contact us -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url "bimamitra:contactus" %}">Contact Us</a>
+                    </li>
+                    
+                </ul>
+                
+            </div>
+        </nav>
+        {% endblock navbar %}
+            
+        {% block content %} <!-- Main Content Block -->
+        
+        {% endblock content %}
+
+        {% block footer %} <!-- Footer Block -->
+        <!-- Optional Footer Content Here -->
+            <div class="text-center mt-5 fully-transparent-container">
+                This website was developed by Ankit | All rights reserved @
+            </div>
+        {% endblock footer %}
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    </body>
+</html>
+
+

@@ -29,9 +29,6 @@ jobs:
       
       - name: Install dependencies
         run: pip install -r requirements.txt
-
-      - name: Run collectstatic
-        run: python manage.py collectstatic
         
       # Optional: Add step to run tests here (PyTest, Django test suites, etc.)
 
@@ -68,9 +65,9 @@ jobs:
       - name: Login to Azure
         uses: azure/login@v1
         with:
-          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_B1F019E8672345FB9FD1B589C8461EF3 }}
-          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_BD854C88824348338243C05EB6A457CC }}
-          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_551AB9B043DC4DEBAC4F00CB98B7C3B2 }}
+          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_B0CE73FAFB7D49768FD091215010AAC2 }}
+          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_8BCEB6DD1DFD4F6E90DE350DDB88F01E }}
+          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_88E2758194AE4E498DC628FE1E534E56 }}
 
       - name: 'Deploy to Azure Web App'
         uses: azure/webapps-deploy@v2

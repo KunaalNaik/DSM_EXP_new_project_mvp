@@ -4,3 +4,4 @@ pinecone-client
 langchain_openai
 langchain
 whitenoise
+python-dotenv

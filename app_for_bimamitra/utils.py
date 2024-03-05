@@ -24,7 +24,6 @@ def generate_response_rag(user_input):
     similar_doc = index.similarity_search_with_score(user_input, int(k))
 
     relevant_docs = [doc for doc, similarity_score in similar_doc]
-    print("relevant docs: ",relevant_docs)
 
 
     llm = ChatOpenAI(temperature=0.0)

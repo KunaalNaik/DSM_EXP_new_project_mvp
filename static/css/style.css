@@ -1,0 +1,351 @@
+/* This style sheet includes all the stye format for the application - BimaMitra
+
+1. base > to include the navigation bar 
+2. home
+3. About
+4. BimaBot app
+5. ContactUs
+*/
+
+/* *****************************************************************************************/
+
+/* ------------------ 1. base ------------------ */
+.navbar {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 1000; /* Ensure it appears above other content */
+    
+}
+
+.body {
+    background-color: #84a363; /* Off white background - change as needed */
+    /* Or use a background image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: #f8f8f8;
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    color: #333333;
+}
+
+.fully-transparent-container {
+    background-color: #ffffff;
+    opacity: 0.5;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+
+
+/* *****************************************************************************************/
+
+/* ------------------ 2. home ------------------ */
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    /* You can add more styling here such as padding or a specific height/width if needed */
+}
+
+.image-container img {
+    max-width: 106%; /* Ensures the image is responsive */
+    height: auto;   /* Maintains the aspect ratio of the image */
+    /* Add more styling as needed, such as a border, etc. */
+}
+
+.header {
+    font-family: 'Georgia', serif;
+    font-size: 45px;
+    color: #0044cc;
+}
+
+.light-grey-container{
+    background-color: #f5f5f5; /* Light grey background color */
+    border: 2px solid #ccc; /* Light grey border color */
+    border-radius: 10px; /* Border radius for rounded corners */
+    padding: 20px; /* Padding inside the container */
+}
+
+.feature-container-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin: auto;
+    border: 2px solid rgb(248, 246, 246);
+    padding: 20px;
+    box-sizing: border-box;
+    font-size: 40px;
+    color:purple;
+}
+
+.feature-list {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 15px;
+    margin: 20px 0;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.feature-list ul {
+    list-style-type: none; /* Use bullet points for list items */
+    padding-left: 0px;
+}
+
+.feature-list li {
+    font-size: 25px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Highlight on hover */
+.feature-list li:hover {
+    color: #4aa9e5; /* Change the text color on hover */
+    border-radius: 15px;
+}
+
+
+.branding-text {
+    font-size: 24px;
+    text-align: center;
+    margin: 20px;
+    color: #333;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: #58bd69; /* Background color for emphasis */
+    
+    /* Border styles */
+    /* border: 2px solid #333; /* Border width and color */
+    border-radius: 30px; /* Border radius */
+    padding: 10px; /* Add padding to create space around the text and the border */
+}
+
+
+.container-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin: auto;
+    border: 2px solid rgb(248, 246, 246);
+    padding: 20px;
+    box-sizing: border-box;
+    font-size: 40px;
+    color:purple;
+}
+
+.why-bima-mitra {
+    font-size: 25px;
+    text-align: justify;
+    margin: 20px 0;
+    color: #333;
+}
+
+.highlight-heading {
+    background-color: #b8b5b5; /* Light grey background color */
+    border: none solid #b9a2a2; /* Black border color */
+    border-radius: 30px; /* Border radius for rounded corners */
+    padding: 10px 20px; /* Padding inside the heading */
+    font-size: 24px; /* Font size for the heading */
+    color: #000; /* Text color */
+    text-align: center; /* Center-align the text */
+    margin: 20px;
+}
+
+.end-of-page-message {
+    background-color: #ffcc00; /* Background color for emphasis */
+    color: #333; /* Text color */
+    font-size: 28px; /* Larger font size for emphasis */
+    font-weight: bold; /* Bold text */
+    text-align: center; /* Center-align the text */
+    padding: 20px; /* Padding to make it visually clear */
+    margin: 20px;
+    border-radius: 30px;
+}
+
+/* *****************************************************************************************/
+/* About */
+
+.first-container {
+    padding: 15px;
+    background-color: #ffffff;
+}
+
+
+
+/* *****************************************************************************************/
+/* contact us */
+.container-contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin: auto;
+    border: 2px solid black;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+
+
+/* *****************************************************************************************/
+/* contact us */
+
+.centered-container {
+    margin: 0 auto;
+    width: 86.66%;
+    background-color: #c8cebd;
+    color: #333333;
+    border: 2px solid #490a06;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.centered-container-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto; /* Adjust the height as needed */
+    
+}
+
+.center-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25vh; /* Adjust the height as needed */
+}
+
+.image-box {
+    width: 200px; /* Set the width of the box */
+    height: 200px; /* Set the height of the box */
+    background-color: #ff0000; /* Set the background color */
+    border: 2px solid #000; /* Add a border with your desired color */
+    text-align: center;
+}
+
+.box-image {
+    max-width: 100%; /* Ensure the image doesn't overflow the box */
+    max-height: 100%; /* Ensure the image doesn't overflow the box */
+    vertical-align: middle; /* Center the image vertically */
+}
+
+.form-container {
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.qform-container {
+    text-align: center; /* Optional: Center align text within the container */
+    width: 100%; /* Set the width to 100% */
+    margin: 0 auto; /* Center the container horizontally */
+    display: block; /* Ensure the container behaves as a block-level element */
+}
+
+.qform-group {
+    text-align: center; /* Optional: Center align text within the form group */
+    width: 100%; /* Set the width to 100% */
+    max-width: 700px; /* Example maximum width */
+    margin: 0 auto; /* Center the form group horizontally */
+    border-radius: 0px;
+}
+
+.qform-control {
+    height: 80px; /* Adjust the height as needed */
+}
+
+
+.disclaimer {
+    
+    padding: 0px; /* Padding for spacing */
+    border: 1px solid #ccc; /* Border for the disclaimer */
+    border-radius: 5px; /* Rounded corners for the container */
+    text-align: center; /* Center-align text content */
+    margin-top: 5px; /* Add space from the top */
+    font-size: 14px; /* Font size for the disclaimer text */
+}
+
+.disclaimer p {
+    margin: 0; /* Remove default margin for paragraphs within the disclaimer */
+}
+
+
+/* Style the container-response */
+.container-response {
+    background-color: #bfbeba; /* Light grey background color */
+    max-width: 600px; /* Set the maximum width */
+    padding: 20px; /* Padding to provide spacing inside the container */
+    border-radius: 5px; /* Rounded corners for aesthetics */
+    margin: 20px auto; /* Center the container horizontally */
+    text-align: center; /* Center-align text content within the container */
+}
+
+/* Style the strong element within the container */
+.container-response strong {
+    font-weight: bold; /* Make the strong text bold */
+    color: #333; /* Text color for the strong text */
+    display: block; /* Display on a new line */
+    margin-bottom: 10px; /* Add space below the strong text */
+}
+/* Style the text inside the response-container */
+.response-container p {
+    margin: 0px; /* Remove default margin for paragraphs */
+}
+
+/* Style for .container-history */
+.container-history {
+    width: 66.66%;
+    height: auto;
+    background-color: grey;
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 15px; /* Add padding for spacing */
+    border-radius: 20px; /* Rounded corners for the container */
+    margin-top: 40px; /* Add space from the top */
+}
+
+/* Style for message text */
+.container-history p {
+    margin: 0; /* Remove default margin for paragraphs within messages */
+}
+
+/* Style for strong text */
+.container-history strong {
+    font-weight: bold; /* Make strong text bold */
+}
+
+
+/* Style for bot messages */
+.bot-message {
+    background-color: #e0e0e0; /* Lighter grey background for bot messages */
+    padding: 10px; /* Add padding for spacing within messages */
+    border-radius: 10px; /* Rounded corners for messages */
+    margin-bottom: 10px; /* Add space between messages */
+    text-align: left; /* Align bot messages to the left */
+}
+
+/* Style for user messages */
+.user-message {
+    background-color: #d4edda; /* Light green background for user messages */
+    padding: 10px; /* Add padding for spacing within messages */
+    border-radius: 10px; /* Rounded corners for messages */
+    margin-bottom: 10px; /* Add space between messages */
+    text-align: left; /* Align user messages to the right */
+}
+
+
+
+/* *****************************************************************************************/
+
+
+
+
+

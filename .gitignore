@@ -1,0 +1,8 @@
+.env
+__init__.py
+.pyc
+.DS_Store
+__pycache__/
+*.py[cod]
+*.py.class
+migrations/
